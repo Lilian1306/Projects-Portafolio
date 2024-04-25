@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <link rel="icon" href="%PUBLIC_URL%/Agregar-un-título-_2_.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lilian's Portfolio</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="mediaqueries.css"/>
+</head>
+<body>
+    <nav id="desktop-nav">
+     <div class="logo"> Lilian Tuyuc</div>
+     <div>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li> 
+        </ul>
+     </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Lilian Tuyuc</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="togglemenu()">About</a></li>
+                <li><a href="#experience" onclick="togglemenu()">Experience</a></li>
+                <li><a href="#projects" onclick="togglemenu()">Projects</a></li>
+                <li><a href="#contact" onclick="togglemenu()">Contact</a></li> 
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="section__pic-container">
+            <img style="border-radius: 50%;" src="./assets/profile-pic-1.jpg" alt="Lilian Tuyuc profile picture">
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hello, I'm</p>
+            <h1 class="title">Lilian Tuyuc</h1>
+            <p class="section__text__p2">Web Developer</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./assets/Curriculum.pdf')">Download Cv</button>
+                <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact Info</button>
+              </div>
+              <div id="socials-container">
+                <img 
+                  src="./assets/linkedin.png" alt="My Linkedin Profile"
+                  class="icon"
+                  onclick="location.href='https://www.linkedin.com/in/lilian-tuyuc/'">
+                  <img 
+                  src="./assets/github.png" alt="My GitHub Profile"
+                  class="icon"
+                  onclick="location.href='https://github.com/DaniM0613'">
+              </div>
+        </div>
+    </section>
+    <section id="about">
+        <p class="section__text__p1">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+            <div class="section__pic-container">
+                <img  
+                 src="./assets/profile-pic-2.jpeg" 
+                 alt="Profile picture"
+                 class="about-pic"
+                 />
+            </div>
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img 
+                         src="./assets/experience.png" 
+                         alt="Experience icon"
+                         class="icon"
+                         />
+                         <h3>Experience</h3>
+                         <p>12 Months <br/>Frontend Developer</p>
+                    </div>
+                    <div class="details-container">
+                        <img 
+                        src="./assets/education.png" 
+                        alt="Education icon"
+                        class="icon"
+                        />
+                        <h3>Education</h3>
+                        <p>2023 - Present UDEMY COURSE
+                        <br/>2020-June University
+                        <br/>2016-2018 Associate´s Degree    
+                    </p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p>I want to be part of a team that believes in human talent and work commitment, where I can challenge my abilities and contribute to shaping the future of our country.    </p>
+                    <p></p>
+                </div>
+            </div>
+        </div>
+        <img 
+        src="./assets/arrow.png" 
+        alt="Arrow Icon" 
+        class="icon arrow"
+        onclick="location.href=`./#experience`"
+        />
+    </section>
+    <section id="experience">
+        <p class="section__text__p1">Explore My</p>
+        <h1 class="title">Experience</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Frontend Development</h2>
+                    <div class="article-container">
+                        <article>
+                            <img 
+                             src="./assets/checkmark.png" 
+                             alt="Experience icon"
+                             class="icon"
+                             />
+                             <div>
+                                <h3>HTML</h3>
+                                <p>Experienced</p>
+                             </div>
+                        </article>
+                        <article>
+                            <img 
+                             src="./assets/checkmark.png" 
+                             alt="Experience icon"
+                             class="icon"
+                             />
+                             <div>
+                                <h3>CSS</h3>
+                                <p>Experienced</p>
+                             </div>
+                        </article>
+                    
+                        <article>
+                            <img 
+                             src="./assets/checkmark.png" 
+                             alt="Experience icon"
+                             class="icon"
+                             />
+                             <div>
+                                <h3>JavaScript</h3>
+                                <p>Intermediate</p>
+                             </div>
+                        </article>
+                        <article>
+                            <img 
+                             src="./assets/checkmark.png" 
+                             alt="Experience icon"
+                             class="icon"
+                             />
+                             <div>
+                                <h3>TypeScript</h3>
+                                <p>Intermediate</p>
+                             </div>
+                        </article>
+                        <article>
+                            <img 
+                             src="./assets/checkmark.png" 
+                             alt="Experience icon"
+                             class="icon"
+                             />
+                             <div>
+                                <h3>Tailwind CSS</h3>
+                                <p>Intermediate</p>
+                             </div>
+                        </article>
+                        <article>
+                            <img 
+                             src="./assets/checkmark.png" 
+                             alt="Experience icon"
+                             class="icon"
+                             />
+                             <div>
+                                <h3>Reacj JS</h3>
+                                <p>Intermediate</p>
+                             </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Backend Development</h2>
+                    <div class="article-container">
+                        <article>
+                            <img 
+                             src="./assets/checkmark.png" 
+                             alt="Experience icon"
+                             class="icon"
+                             />
+                             <div>
+                                <h3>MYSQL</h3>
+                                <p>Basic</p>
+                             </div>
+                        </article>
+                        <article>
+                            <img 
+                             src="./assets/checkmark.png" 
+                             alt="Experience icon"
+                             class="icon"
+                             />
+                             <div>
+                                <h3>MongoDB</h3>
+                                <p>Basic</p>
+                             </div>
+                        </article>
+                        <article>
+                            <img 
+                             src="./assets/checkmark.png" 
+                             alt="Experience icon"
+                             class="icon"
+                             />
+                             <div>
+                                <h3>Node JS</h3>
+                                <p>Basic</p>
+                             </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img 
+        src="./assets/arrow.png" 
+        alt="Arrow Icon" 
+        class="icon arrow"
+        onclick="location.href=`./#projects`"
+        />
+    </section>
+     <section id="projects">
+        <p class="section__text__p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="experience-details-container">
+            <div class="about-containers"> 
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img
+                      src="./assets/project-1.png"
+                      alt="project 1"
+                      class="project-img"
+                    />
+                </div>
+                <h2 class="experience-sub-title project-title">Project One</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/DaniM0613/GuitarLA_TypeScript' ">GitHub</button>
+                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://guitar-la-type-script.vercel.app/' ">Source</button>
+    
+                    
+                </div>
+            </div>
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img
+                      src="./assets/project-2.png"
+                      alt="project 2"
+                      class="project-img"
+                    />
+                </div>
+                <h2 class="experience-sub-title project-title">Project Two</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/DaniM0613/criptos_react' ">GitHub</button>
+    
+                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://criptos-react-lilac.vercel.app/' ">Source</button>
+                </div>
+            </div>
+
+
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img
+                      src="./assets/project-3.png"
+                      alt="project 3"
+                      class="project-img"
+                    />
+                </div>
+                <h2 class="experience-sub-title project-title">Project Three</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/DaniM0613/citas_react_vite' ">GitHub</button>
+    
+                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://citas-react-vite-six.vercel.app/' ">Source</button>
+                </div>
+            </div>
+
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img
+                      src="./assets/project-4.png"
+                      alt="project 4"
+                      class="project-img"
+                    />
+                </div>
+                <h2 class="experience-sub-title project-title">Project Four</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/DaniM0613/Control-Gastos-Context-API' ">GitHub</button>
+    
+                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://control-gastos-context-api.vercel.app/' ">Source</button>
+                </div>
+            </div>
+
+
+            </div>
+        </div>
+        <img 
+        src="./assets/arrow.png" 
+        alt="Arrow Icon" 
+        class="icon arrow"
+        onclick="location.href=`./#projects`"
+        />
+
+
+        <section id="contact">
+            <p class="section__text__p1">Get In Touch</p>
+            <h1 class="title">Contact Me</h1>
+            <div class="contact-info-upper-container">
+                <div class="contact-info-container">
+                    <img 
+                      src="./assets/email.png" 
+                      alt="email icon"
+                      class="icon contact-icon email-icon "
+                    />
+                    <p><a href="mailto:lilytuyuc0613@gmail.com">Example@gmail.com</a></p>
+                </div>
+                <div class="contact-info-container">
+                    <img 
+                      src="./assets/linkedin.png" 
+                      alt="Linkedin icon"
+                      class="icon contact-icon"
+                    />
+                    <p><a href="https://www.linkedin.com/in/lilian-tuyuc/">Linkedin</a></p>
+                </div>
+            </div>
+         </section>
+         <footer>
+            <nav>
+                <div class="nav-links-container">
+                    <ul class="nav-links">
+                        <li> <a href="#about">About</a></li>
+                        <li> <a href="#experience">Experience</a></li>
+                        <li> <a href="#projects">Projects</a></li>
+                        <li> <a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <p>Copyright &#169; All Rights Reserved</p>
+         </footer>
+            <script src="script.js"></script>
+            
+        </body>
+        </html>
